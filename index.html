@@ -2,13 +2,82 @@
 <html lang="fr">
 	<head>
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"> <!-- Favicon -->
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
 		<header>
-			<h1>Projet d'ISN</h1>
+			<h1 class="titre">Ethynd</h1>
+			<nav id="menu" > <!-- Menu -->
+				<ul>
+					<li>
+						<a href="">Acceuil</a>
+					</li>
+					<li>
+						<a href="">Le Jeu</a>
+						<ul class="sous-menu">
+							<li><a href="">Téléchargement</a></li>
+							<li><a href="">Informations</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">Liens</a>
+						<ul class="sous-menu">
+							<li><a href="">Rapports</a></li>
+							<li><a href="">Code</a></li>
+							<li><a href="">Sources/Logiciels</a></li>
+						</ul>
+					</li>
+					<li>					
+						<a href="">Qui sommes-nous ?</a>
+						<ul class="sous-menu">
+							<li><a href="">Le Groupe</a></li>
+							<li><a href="">Anthony</a></li>
+							<li><a href="">Dorian</a></li>
+							<li><a href="">Sofiane</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
 		</header>
-		<p>Texte</p>
+		<div class="contenu">
+			
+			<section>
+				<article>
+					<a href="">
+						<div class="titre">
+							<img class="image-article" src="images/test.jpg">
+							<h3>Travail de Anthony</h3>
+						</div>
+						<p>description partie Anthony</p>
+					</a>
+				</article>
+				<article>
+					<a href="">
+						<div class="titre">
+							<img class="image-article" src="images/test.jpg">
+							<h3>Travail de Sofian</h3>
+						</div>
+						<p>Description partie sofian</p>
+					</a>
+				</article>
+				<article>
+					<a href="">
+						<div class="titre">
+							<img class="image-article" src="images/test.jpg">
+							<h3>Travail de Dorian</h3>
+						</div>
+						<p>Dorian s'est occupé de créer la super classe entité, qui donne naissance à de nombreuses sous classes tel que Personnage() ou encore Ennemie().</p>
+					</a>
+				</article>
+			</section>
+			
+		</div>
 		<footer>
+			<p>Site web du projet D'ISN</p>
+			<p>Crée par Sofiane Djerbie, Anthoni *...* et Dorian Voland</p>
+			<p>© 010111 ISN2019 Tous droits réservés.</p>
+		
 		</footer>
 	</body>
 </html>
