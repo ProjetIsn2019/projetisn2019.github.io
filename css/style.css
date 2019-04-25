@@ -64,8 +64,8 @@ header h1
 
 .contenu
 {
-	padding-top: 20px;
-	padding-bottom: 20px; 
+	padding-top: 50px;
+	padding-bottom: 50px; 
 	width: 70%;
 	margin: auto;
 	background: url("../images/arriere-plan_section.png");
@@ -97,7 +97,7 @@ header h1
 	color: white;
 	text-decoration: none;
 }
-.contenu article:hover
+.contenu .article_main:hover
 {
 	border: 1px solid grey;
 	background-color: rgba(163,156,154,0.2);
@@ -116,6 +116,23 @@ article .titre img
 	padding-right: 5%; 
 }
 /*----------------------------------- Fin corps de la page ------------------------------------*/
+/*----------------------------------- corps de la page non principal------------------------------------*/
+article video
+{
+	padding-right: 10px;
+	height: 200px;
+} 	
+article .text
+{
+	flex-direction: column;
+}
+article div
+{
+	padding-bottom: 10px;
+	display: flex;
+}
+/*----------------------------------- Fin corps de la page ------------------------------------*/
+
 /*-------------------------------------- Footer de la page ------------------------------------*/
 footer
 {
