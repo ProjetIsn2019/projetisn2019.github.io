@@ -28,9 +28,10 @@
 							<li><a href="">Sources/Logiciels</a></li>
 						</ul>
 					</li>
-					<li>
+					<li>					
 						<a href="">Qui sommes-nous ?</a>
 						<ul class="sous-menu">
+							<li><a href="pages/nous/le_groupe.html">Le Groupe</a></li>
 							<li><a href="pages/nous/anthony.html">Anthony</a></li>
 							<li><a href="pages/nous/dorian.html">Dorian</a></li>
 							<li><a href="pages/nous/sofiane.html">Sofiane</a></li>
@@ -40,12 +41,12 @@
 			</nav>
 		</header>
 		<div class="contenu">
-
+			
 			<section>
 				<article>
 					<h2>Ma partie</h2>
 						<ol>
-							<li> Creation d'une classe joueur <img src = "caca.png"></li>
+							<li> Creation d'une classe joueur </li>
 							<li> Creation d'une classe Entité </li>
 							<li> Centralisation des classes </li>
 							<li> ajout des collisions </li>
@@ -57,14 +58,14 @@
 					<div>
 						<video autobuffer autoloop loop controls>
 								<source src="../../images/dorian/ajout_deplacement.mp4">
-						</video>
+						</video> 
 						<div class = "text">
 							<h4>1) ajout des déplacement</h4>
-							<p>Creation d'une image qui ce contente de ce déplacer de haut en bas et de droite a gauche
+							<p>Creation d'une image qui ce contente de ce déplacer de haut en bas et de droite a gauche 
 							</p>
 							<p><strong>Alogithme :</strong><br />
 								Different du programme final: plus basic <br />
-								Si touche presser est haut => déplacement haut
+								Si touche presser est haut => déplacement haut 
 
 							</p>
 							<p><strong>Inconveniant :</strong><br />
@@ -77,7 +78,7 @@
 					<div>
 						<video autobuffer autoloop loop controls>
 								<source src="../../images/dorian/ajout_animation.mp4">
-						</video>
+						</video> 
 						<div class = "text">
 							<h4>2) ajouts des annimations</h4>
 
@@ -95,9 +96,11 @@
 				<article>
 					<h1>Creation d'une classe entité</h1>
 					<div>
+
 						<div class = "text">
+							<img src ="../../images/dorian/entite.PNG" >
 							<h4>1) Optimisation de la classe joueur</h4>
-							<p>
+							<p> 
 								La classe joueur est optimisé pour permettre de la reutiliser plus tard
 							</p>
 							<p>
@@ -108,27 +111,29 @@
 					<div>
 						<div class = "text">
 							<h4>2) Creation d'une classe entité</h4>
-							<p>
+							<p> 
 								La classe entité est creé et deviens une superclasse dont vont hériter toute les entités tels que les monstres ou joueurs
 							</p>
 						</div>
 					</div>
 					<div>
+						
 						<div class = "text">
 							<h4>3) Creation d'une classe Monstre</h4>
-							<p>
+							<p> 
 								La classe hérite donc de la classe entité et s'occupe de gérer les IA du jeux. <br />
 								Les teste sont effectuer avec le dragon rouge dans un premier temps.
 
 							</p>
 							<p>
-								L'IA dispose de deux action possible:
+								L'IA dispose de deux action possible: 
 								<ul>
 									<li>déplacement prédéfinie</li>
 									<li>déplacement aléatoire</li>
 								</ul>
 							</p>
 						</div>
+						<img src ="../../images/dorian/ennemi.png" >
 					</div>
 				</article>
 				<article>
@@ -136,18 +141,41 @@
 					<div>
 						<div class = "text">
 							<p> Les classes sont centralisé et hérite toute de Entité().</p>
-							<p>
+							<p> 
 						</div>
 					</div>
 				</article>
 				<article>
 					<h1>Ajout des collisions</h1>
 					<div>
+						<video autobuffer autoloop loop controls>
+								<source src="../../images/dorian/collisions.mp4">
+						</video> 
 						<div class = "text">
 							<p>Les collisions on etait faite par sofiane et adapter au entité par dorian</p>
 							<p><strong>Alogithme :</strong><br />
 								Avec un fonction pygame :<br />
 								Assigne un masque a chaque entité. effectue un test de collisions
+
+							</p>
+						</div>
+					</div>
+				</article>
+				<article>
+					<h1>ajout des entités</h1>
+					<div>
+						<video autobuffer autoloop loop controls>
+								<source src="../../images/dorian/entite.mp4">
+						</video> 
+						<div class = "text">
+							<p>Ma derniere tache: ajouter les entités presentes dans le jeux  </p>
+							<p><strong>Alogithme :</strong><br />
+								Dans constantes_entite.py avec des dictionnaire: 
+								<ul>
+									<li>Annimation: contient les sprites de chaque monstres correspondant a chaque action.</li>
+									<li>Timings: contient les informations relative au deplacement, nombre de sprite, etc... </li>
+								</ul>
+								Dans constantes_partie.py avec un dictionnaire qui liste toutes les entitées par niveau et leur parametres.<br />
 
 							</p>
 						</div>
@@ -167,19 +195,14 @@
 						</div>
 					</div>
 				</article>
-
+				
 			</section>
 		</div>
 		<footer>
-<<<<<<< HEAD
-			<p>Site web officiel d'Ethynd</p>
-			<p>Projet d'ISN libre de droit. (2019)</p>
-=======
 			<p>Site web du projet D'ISN</p>
-			<p>Crée par Sofiane Djerbie, Anthony *...* et Dorian Voland</p>
+			<p>Crée par Sofiane Djerbie, Anthoni *...* et Dorian Voland</p>
 			<p>© 010111 ISN2019 Tous droits réservés.</p>
 		
->>>>>>> 23ef201e31e2ce3b62b82f1a604a6b455b8fab5f
 		</footer>
 	</body>
 </html>
