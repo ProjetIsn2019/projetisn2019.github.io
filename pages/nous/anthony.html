@@ -3,6 +3,7 @@
 	<head>
 		<link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.png"> <!-- Favicon -->
 		<meta charset="UTF-8">
+		<title>Ethynd: Anthony</title>
 		<link rel="stylesheet" href="../../css/style.css" />
 	</head>
 	<body>
@@ -41,6 +42,124 @@
 		</header>
 		<div class="contenu">
 			<section>
+				<article>
+					<h1>Sommaire</h1>
+						<ul>
+							<li>Introduction</li>
+							<li>Création du Menu</li>
+							<li>Mise en place des Musiques</li>
+							<li>Modélisation des Maps</li>
+							<li>Les Téléportations</li>
+							<li>Conclusion</li>
+						</ul>
+				</article>
+				<article>
+					<h1>Introduction</h1>
+					<div class="text">
+						<h2>Présentation du Projet</h2>
+						<p>
+							Nous avons mis 4 mois pour réaliser ce projet.<br />
+							Le groupe est composé de trois personnes.<br />
+							La première idée du groupe est de créer un jeu vidéo.
+						</p>
+						<h2>Histoire du Jeu</h2>
+						<p>
+							Le jeu est en une démonstration, il n'y a pas vraiment d'histoire.<br />
+							En réalité, le but est de se plonger le plus possible dans le développement d'un jeu.<br />
+							Cependant, le but du jeu est de survivre, évidemment.
+						</p>
+						<h2>Mon Rôle</h2>
+						<p>
+							Je me suis occupé de la création du menu, des musiques, des téléportations et de la modélisation de la map.
+						</p>
+					</div>
+				</article>
+
+				<article>
+					<h1>Création du Menu</h1>
+					<div class="text">
+						<h2>La Fenêtre Pygame</h2>
+						<a href="../../images/anthony/code_menu.png"><img src="../../images/anthony/code_menu.png"/></a>
+						<p>
+							J'ai créé un code permettant d'ouvrir une fenêtre dans pygame.<br />
+							Dans cette fenêtre j'affiche une image de menu avec des "options" pour acceuillir le joueur.<br />
+							Ces options sont prises en charges via les évènements.<br />
+							J'ai fait pareil pour l'écran d'aide, de chargement et de fin.
+						</p>
+					</div>
+				</article>
+
+				<article>
+					<h1>Mise en place des Musiques</h1>
+					<div class="text">
+						<h2>La Fenêtre Pygame</h2>
+						<a href="../../images/anthony/code_musique.png"><img src="../../images/anthony/code_musique.png"/></a>
+						<p>
+							J'ai ajouté des bruitages, des musiques au projet.<br />
+							Pour cela, j'utilise des objets pygame.<br />
+							J'ai également utilisé des channels pour le joueur.
+						</p>
+					</div>
+				</article>
+
+				<article>
+					<h1>Modélisation des Maps</h1>
+					<div class="text">
+						<h2>1- Création d'un Modèle Papier</h2>
+						<a href="../../images/anthony/map_finale.png"><img src="../../images/anthony/map_finale.png"/></a>
+						<p>
+							J'ai créé une map sur feuille pendant quelques heures, en prenant compte des échelles (tuiles/cm)<br />
+							Suite a quelques problèmes de temps, nous avons opté pour une version plus petite de la map. (90/90 tuiles)
+						</p>
+						<h2>2- Créer les maps</h2>
+						<a href="../../images/anthony/tiled.png"><img src="../../images/anthony/tiled.png"/></a>
+						<p>
+							Créer une map a la main prend beaucoup trop de temps.<br />
+							Afin de régler cela, j'ai utilisé un logiciel de création de map nommé <a href="https://www.mapeditor.org/">Tiled</a>.
+						</p>
+						<h2>Les couches</h2>
+						<a href="../../images/anthony/map.gif"><img src="../../images/anthony/map.gif"/></a>
+						<h2>Map finale</h2>
+						<a href="../../images/anthony/aventure.png"><img src="../../images/anthony/aventure.png"/></a>
+					</div>
+				</article>
+
+				<article>
+					<h1>Les Téléportations</h1>
+					<div class="text">
+						<h2>Création d'évenements</h2>
+						<p>
+							Pygame ne nous propose pas d'évènements en fonction de la position du personnage sur la map<br />
+							Donc c'est à nous de créer cet "évenèment". Même si ce n'en est pas un a proprement parlé.<br />
+							Pour cela, nous allons donc vérifier la position de la caméra (et donc, du personnage) à chaque tick.<br />
+							Ensuite, nous allons executer quelque chose si la position de la camera est égale a celle voulue.<br />
+							Pour résumer, si le personnage est à un certain endroit, alors on fait quelque chose, défini dans notre code.
+						</p>
+					</div>
+				</article>
+
+				<article>
+					<h1>Conclusion</h1>
+					<div class="text">
+						<h2>À propos du travail de groupe</h2>
+						<p>
+							Chacun a ses idées il est donc parfois compliqué de se mettre d'accord, mais le groupe est essentiel.<br />
+							Tout le monde n'a pas les mêmes capacités, chaque personne apporte donc sa contribution au projet.<br />
+							L'entraide est donc fondamentale pour pouvoir travailler ensemble.
+						</p>
+						<h2>Mon avis personnel</h2>
+						<p>
+							Ce travail de groupe fut une très belle experience pour mettre en oeuvre les notions étudiées tout au long de l'année.<br />
+							Cette experience nous a aussi appris a travailler en groupe, comme les TPE.
+						</p>
+						<h2>Problèmes rencontrés</h2>
+						<p>
+							Certaines notions comme les objets, les collisions et les matrices ont été difficiles à comprendre.<br />
+							Le temps fut aussi une contrainte, j'ai du recommencer la map. <a href="../../images/anthony/premiere_map.png">(Ancienne map)</a>
+						</p>
+					</div>
+				</article>
+
 			</section>
 		</div>
 		<footer>

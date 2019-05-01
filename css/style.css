@@ -9,13 +9,13 @@ body
 header
 {
 	background: url("../images/header.png");
-	margin: auto; 
-	width: 70%;	
+	margin: auto;
+	width: 70%;
 }
 header h1
 {
 	margin: 0px;
-	padding: 20px;
+	padding: 25px;
 	color: white;
 }
 #menu ul {
@@ -26,7 +26,7 @@ header h1
 	display: flex;
 	text-align:center;
 	width: 100%;
-	
+
  }
 #menu li {
 
@@ -65,7 +65,7 @@ header h1
 .contenu
 {
 	padding-top: 50px;
-	padding-bottom: 50px; 
+	padding-bottom: 50px;
 	width: 70%;
 	margin: auto;
 	background: url("../images/arriere-plan_section.png");
@@ -89,7 +89,7 @@ header h1
 	padding: 10px;
 	width: 70%;
 	border-top: 1px solid grey;
-		
+
 
 }
 .contenu article a
@@ -106,14 +106,12 @@ article .titre
 {
 	display: flex;
 	align-items: center;
-
-
 }
 article .titre img
 {
 	width: 100px;
 	height: 100px;
-	padding-right: 5%; 
+	padding-right: 5%;
 }
 /*----------------------------------- Fin corps de la page ------------------------------------*/
 /*----------------------------------- corps de la page non principal------------------------------------*/
@@ -121,7 +119,13 @@ article video
 {
 	padding-right: 10px;
 	height: 200px;
-} 	
+}
+article img
+{
+	padding-right: 10px;
+	width: 90%;
+	height: 90%;
+}
 article .text
 {
 	flex-direction: column;
