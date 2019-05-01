@@ -45,30 +45,30 @@
 				<article>
 					<h2>Ma partie</h2>
 						<ol>
-							<li> Creation d'une classe joueur </li>
-							<li> Creation d'une classe Entité </li>
+							<li> Création d'une classe Joueur() </li>
+							<li> Création d'une classe Entité() </li>
 							<li> Centralisation des classes </li>
-							<li> ajout des collisions </li>
-							<li> Les problèmes rencontré </li>
+							<li> Ajout des collisions </li>
+							<li> Les problèmes rencontrés </li>
 						</ol>
 				</article>
 				<article>
-					<h1>Creations d'une classe joueur</h1>
+					<h1>Création d'une classe joueur</h1>
 					<div>
 						<video autobuffer autoloop loop controls>
 								<source src="../../images/dorian/ajout_deplacement.mp4">
 						</video> 
 						<div class = "text">
-							<h4>1) ajout des déplacement</h4>
-							<p>Creation d'une image qui ce contente de ce déplacer de haut en bas et de droite a gauche 
+							<h4>1) Ajout des déplacements</h4>
+							<p> Création d'une image qui se contente de se déplacer de haut en bas et de droite à gauche.
 							</p>
-							<p><strong>Alogithme :</strong><br />
-								Different du programme final: plus basic <br />
-								Si touche presser est haut => déplacement haut 
+							<p><strong>Algorithme :</strong><br />
+								Différent du programme final: plus simple <br />
+								Si la touche pressée est "haut" => déplacement vers le haut 
 
 							</p>
 							<p><strong>Inconveniant :</strong><br />
-								Code long et dificil a réxploiter  <br />
+								Code long et difficile à réexploiter  <br />
 								<br />
 							</p>
 						</div>
@@ -79,55 +79,55 @@
 								<source src="../../images/dorian/ajout_animation.mp4">
 						</video> 
 						<div class = "text">
-							<h4>2) ajouts des annimations</h4>
+							<h4>2) Ajout des animations</h4>
 
-							<p><strong>Alogithme :</strong><br />
-								Avec un systeme de compteur<br />
-								S'execute en fonction du nombre de frames par seconde.
+							<p><strong>Algorithme :</strong><br />
+								Avec un système de compteur.<br />
+								S'éxecute en fonction du nombre de frames par seconde.
 
 							</p>
-							<p><strong>Inconveniant v1 :</strong><br />
-								Code dificil a réxploiter car spécifique au joueur <br />
+							<p><strong>Inconveniant de la version 1 :</strong><br />
+								Code difficile à réexploiter car spécifique au joueur. <br />
 							</p>
 						</div>
 					</div>
 				</article>
 				<article>
-					<h1>Creation d'une classe entité</h1>
+					<h1>Création d'une classe entité</h1>
 					<div>
 
 						<div class = "text">
 							<img src ="../../images/dorian/entite.PNG" >
 							<h4>1) Optimisation de la classe joueur</h4>
 							<p> 
-								La classe joueur est optimisé pour permettre de la reutiliser plus tard
+								La classe joueur est optimisée pour permettre de la réutiliser plus tard
 							</p>
 							<p>
-								Creation du systeme de constante pour simplifier l'ajout des monstres et personnage a venir.
+								Création du systéme de constante pour simplifier l'ajout des monstres et des personnages à venir.
 							</p>
 						</div>
 					</div>
 					<div>
 						<div class = "text">
-							<h4>2) Creation d'une classe entité</h4>
+							<h4>2) Création d'une classe entité</h4>
 							<p> 
-								La classe entité est creé et deviens une superclasse dont vont hériter toute les entités tels que les monstres ou joueurs
+								La classe entité est créée et devient une superclasse dont vont hériter toute les entités tels que les monstres ou joueurs
 							</p>
 						</div>
 					</div>
 					<div>
 						
 						<div class = "text">
-							<h4>3) Creation d'une classe Monstre</h4>
+							<h4>3) Création d'une classe Monstre</h4>
 							<p> 
 								La classe hérite donc de la classe entité et s'occupe de gérer les IA du jeux. <br />
-								Les teste sont effectuer avec le dragon rouge dans un premier temps.
+								Les tests sont effectués avec le dragon rouge dans un premier temps.
 
 							</p>
 							<p>
-								L'IA dispose de deux action possible: 
+								L'IA dispose de deux actions possibles: 
 								<ul>
-									<li>déplacement prédéfinie</li>
+									<li>déplacement prédéfini</li>
 									<li>déplacement aléatoire</li>
 								</ul>
 							</p>
@@ -139,7 +139,7 @@
 					<h1>Centralisation des classes</h1>
 					<div>
 						<div class = "text">
-							<p> Les classes sont centralisé et hérite toute de Entité().</p>
+							<p> Les classes sont centralisées et héritent toutes de Entite().</p>
 							<p> 
 						</div>
 					</div>
@@ -151,10 +151,10 @@
 								<source src="../../images/dorian/collisions.mp4">
 						</video> 
 						<div class = "text">
-							<p>Les collisions on etait faite par sofiane et adapter au entité par dorian</p>
-							<p><strong>Alogithme :</strong><br />
+							<p>Les collisions ont été faites par Sofiane et adaptées aux entités par Dorian</p>
+							<p><strong>Algorithme :</strong><br />
 								Avec un fonction pygame :<br />
-								Assigne un masque a chaque entité. effectue un test de collisions
+								Assigne un masque à chaque entité. Effectue un test de collisions
 
 							</p>
 						</div>
@@ -167,29 +167,29 @@
 								<source src="../../images/dorian/entite.mp4">
 						</video> 
 						<div class = "text">
-							<p>Ma derniere tache: ajouter les entités presentes dans le jeux  </p>
-							<p><strong>Alogithme :</strong><br />
-								Dans constantes_entite.py avec des dictionnaire: 
+							<p>Ma derniere tâche: ajouter les entités présentes dans le jeux  </p>
+							<p><strong>Algorithme :</strong><br />
+								Dans constantes_entite.py avec des dictionnaires: 
 								<ul>
-									<li>Annimation: contient les sprites de chaque monstres correspondant a chaque action.</li>
-									<li>Timings: contient les informations relative au deplacement, nombre de sprite, etc... </li>
+									<li>Annimation: contient les sprites de chaque monstre correspondant à chaque action.</li>
+									<li>Timings: contient les informations relatives aux déplacements, nombre de sprites, etc... </li>
 								</ul>
-								Dans constantes_partie.py avec un dictionnaire qui liste toutes les entitées par niveau et leur parametres.<br />
+								Dans constantes_partie.py avec un dictionnaire qui liste toutes les entitées par niveau et leurs paramètres.<br />
 
 							</p>
 						</div>
 					</div>
 				</article>
 				<article>
-					<h1>Probleme rencontré</h1>
+					<h1>Problème rencontrés</h1>
 					<div>
 						<div class = "text">
 							<h4>1) les collisions :</h4>
-							<p>Les collisions sont dificils a gérer.</p>
-							<p>Avant l'utilisation de fonction pygame, essais de collision a la main.
+							<p>Les collisions sont difficiles à gérer.</p>
+							<p>Avant l'utilisation de fonction pygame, essais de collision à la main.
 							</p>
-							<h4>2) compensé déplacement caméra :</h4>
-							<p>Comprendre le fonctionnement dynamique de la map pour adapter les entités  celle-ci
+							<h4>2) compenser le déplacement caméra :</h4>
+							<p>Comprendre le fonctionnement dynamique de la map pour adapter les entités
 							</p>
 						</div>
 					</div>
