@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.png"> <!-- Favicon -->
+		<meta charset="UTF-8">
+		<title>Ethynd: Anthony</title>
+		<link rel="stylesheet" href="../../css/style.css" />
+	</head>
+	<body>
+		<header>
+			<h1 class="titre">Ethynd: Sofiane</h1>
+			<nav id="menu" > <!-- Menu -->
+				<ul>
+					<li>
+						<a href="../../index.html">Accueil</a>
+					</li>
+					<li>
+						<a href="">Le Jeu</a>
+						<ul class="sous-menu">
+							<li><a href="https://github.com/ProjetIsn2019/Ethynd/archive/master.zip">Téléchargement</a></li>
+							<li><a href="https://github.com/ProjetIsn2019">Informations</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">Liens</a>
+						<ul class="sous-menu">
+							<li><a href="https://github.com/ProjetIsn2019/Rapports">Rapports</a></li>
+							<li><a href="https://github.com/ProjetIsn2019/Ethynd">Code</a></li>
+							<li><a href="pages/source.html">Sources/Logiciels</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">Qui sommes-nous ?</a>
+						<ul class="sous-menu">
+							<li><a href="sofiane.html">Anthony</a></li>
+							<li><a href="dorian.html">Dorian</a></li>
+							<li><a href="sofiane.html">Sofiane</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="contenu">
+			<section>
+				<article>
+					<h1>Sommaire</h1>
+						<ul>
+							<li>Introduction</li>
+							<li>Composition d'une Map</li>
+							<li>Stocker/Afficher une Map</li>
+							<li>La Camera</li>
+							<li>Les Animations</li>
+							<li>Les Collisions</li>
+							<li>Conclusion</li>
+						</ul>
+				</article>
+				<article>
+					<h1>Introduction</h1>
+					<div class="text">
+						<h2>Présentation du Projet</h2>
+						<p>
+							Le projet est assez simple.<br />
+							Le but "explicite" est de créer un RPG.<br />
+							En realité il s'agit de s'immerger dans le développement du jeu vidéo.
+						</p>
+						<h2>Mon Rôle</h2>
+						<p>
+							Je suis le créateur de l'objet Map, ainsi que de l'objet Hitbox.<br />
+							J'ai également introduit le groupe à la programmation orientée objet.
+						</p>
+					</div>
+				</article>
+
+				<article>
+					<h1>Composition d'une Map</h1>
+					<div class="text">
+						<h2>Les Couches</h2>
+						<a href="../../images/sofiane/couches.png"><img src="../../images/sofiane/couches.png"/></a>
+						<p>
+							Une Map est composée de 4 couches décoratrice et d'une 5ème couche de Hitboxs.<br />
+							Les 4 couches décoratrices (= couches de tuiles) sont nommés respectivement 0, 1, 2, 3.<br />
+							Les couches 0, 1, 2 constituent l'arrière plan. La couche 3 est le premier plan.<br />
+						</p>
+						<a href="../../images/sofiane/couche3.gif"><img src="../../images/sofiane/couche3.gif"/></a>
+					</div>
+				</article>
+
+				<article>
+					<h1>Stocker/Afficher une Map</h1>
+					<div class="text">
+						<h2>Le CSV et le Tileset</h2>
+						<a href="../../images/sofiane/tileset.png"><img src="../../images/sofiane/tileset.png"/></a>
+						<p>
+							Un tileset est un regroupement de plusieurs tuiles. <a href="../../images/sofiane/tileset_complet.png">(Tileset Complet)</a><br />
+							Ces tuiles sont découpés assignées à un identifiant à l'aide d'une fonction.<br />
+							Les maps sont créées à l'aide de fichiers CSV stockant sous forme d'un tableau l'identifiant et la position de chaque tuiles.<br />
+							Chaque couche de tuile est stockée dans un fichier CSV différent.<br />
+							Une map standard est donc composée de 4 fichiers. nom_0.csv, nom_1.csv etc.
+						</p>
+						<a href="../../images/sofiane/csv.png"><img src="../../images/sofiane/csv.png"/></a>
+						<h2>Charger une Map pour l'afficher</h2>
+						<p>
+							On va donc parcourir chaque fichier CSV d'une map et stocker chaque valeur dans une matrice. Il y a une couche par matrice.<br />
+							Ensuite, on va parcourir les matrices pour coller chaque tuile correspondant aux identifiants contenues dans cette dernière sur une surface pygame.<br />
+							On utilise deux surfaces. Une surface arriere plan pour les couches 0, 1, 2 et une surface premier plan pour la couche 3.<br />
+							Il suffit donc d'afficher ces surfaces pour afficher la map.
+						</p>
+					</div>
+				</article>
+
+				<article>
+					<h1>La Caméra</h1>
+					<div class="text">
+						<h2>Une Map amovible</h2>
+						<p>
+							Il faut savoir que pygame manipule chaque élément a partir de son coin haut gauche. <br />
+							La map bouge. En effet, c'est grâce à la camera (2 variables de l'objet Map) que cela est possible.<br />
+							Une camera représente le décalage entre le point 0 du repère pygame et le point 0 de la map.
+						</p>
+						<a href="../../images/sofiane/repere.png"><img src="../../images/sofiane/repere.png"/></a>
+					</div>
+				</article>
+
+				<article>
+					<h1>Les Animations</h1>
+					<div class="text">
+						<h2>Des Matrices Dynamiques</h2>
+						<a href="../../images/sofiane/animaiton_exemple.gif"><img src="../../images/sofiane/animation_exemple.gif"/></a>
+						<p>
+							Les Matrices changent au fil du temps.<br />
+							En conséquence, les tuiles de la map change: Il y a des animations.<br />
+							C'est grâce a un dictionnaire que nous faisons cela.<br />
+							Les Matrices sont parcourues et certaines des valeurs sont changées à leur correspondance dans le dictionnaire.<br />
+							On regénère donc l'image des tuiles correspondantes aux identifiants changés dans la matrice.
+						</p>
+						<a href="../../images/sofiane/animation.png"><img src="../../images/sofiane/animation.png"/></a>
+					</div>
+				</article>
+
+				<article>
+					<h1>Les Collisions</h1>
+					<div class="text">
+						<h2>Des Matrices Dynamiques</h2>
+						<a href="../../images/sofiane/collisions.gif"><img src="../../images/sofiane/collisions.gif"/></a>
+						<p>
+							On va parcourir la matrice et vérifier si les identifiant de tuiles dans cette dernière correspondent a des tuiles possédant des collisions.<br />
+							Si c'est le cas alors on va créer un rectangle pygame et un masque à l'aide de l'objet Hitbox.<br />
+							On pourras donc utiliser ces éléments pour vérifier si il y a collision entre deux hitboxs.
+						</p>
+						<a href="../../images/sofiane/hitbox.png"><img src="../../images/sofiane/hitbox.png"/></a>
+					</div>
+				</article>
+
+				<article>
+					<h1>Conclusion</h1>
+					<div class="text">
+						<h2>À propos du travail de groupe</h2>
+						<p>
+							J'ai bien aimé le travail de groupe en général.<br />
+							Le travail a été partagé en fonction des capacités de chacun.<br />
+							La création au niveau informatique en groupe est réélement satisfaisante.
+						</p>
+						<h2>Mon avis personnel</h2>
+						<p>
+							L'immersion dans la programmation fut "brutale", nous avons abordé des notions plus ou moins abstraites (Objets, Héritage).<br />
+							Cependant, après s'être entrainé à maitriser ces éléments, la programmation en python parait beaucoup plus facile.<br />
+							C'est un tout nouveau monde, une nouvelle facon de travailler qui me plaît, de plus internet propose énormément de ressources utiles.
+						</p>
+						<h2>Problèmes rencontrés</h2>
+						<p>
+							Comme dit au dessus, certains éléments abstraits ont pu nous perturber au départ, mais après maitrise de ces derniers tout est devenu plus facile.<br />
+							Cependant certaines choses restent obscures. Par exemple, l'asynchrone et le multi-threading pour améliorer les performances, l'optimisation du code etc.<br />
+							Tout est perfectible.
+						</p>
+					</div>
+				</article>
+
+			</section>
+		</div>
+		<footer>
+			<p>Site web officiel d'Ethynd</p>
+			<p>Projet d'ISN libre de droit. (2019)</p>
+		</footer>
+	</body>
+</html>
