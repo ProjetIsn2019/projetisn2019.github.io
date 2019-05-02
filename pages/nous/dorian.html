@@ -3,7 +3,6 @@
 	<head>
 		<link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.png"> <!-- Favicon -->
 		<meta charset="UTF-8">
-		<title>Ethynd: Dorian</title>
 		<link rel="stylesheet" href="../../css/style.css" />
 	</head>
 	<body>
@@ -18,30 +17,30 @@
 						<a href="">Le Jeu</a>
 						<ul class="sous-menu">
 							<li><a href="https://github.com/ProjetIsn2019/Ethynd/archive/master.zip">Téléchargement</a></li>
-							<li><a href="https://github.com/ProjetIsn2019">Code Source</a></li>
+							<li><a href="https://github.com/ProjetIsn2019">Informations</a></li>
 						</ul>
 					</li>
 					<li>
 						<a href="">Liens</a>
 						<ul class="sous-menu">
-							<li><a href="https://github.com/ProjetIsn2019/Rapports/blob/master/RECAPITULATIF.md">Rapports</a></li>
-
-							<li><a href="https://github.com/ProjetIsn2019/Rapports/blob/master/RECAPITULATIF.md#Sources">Sources/Logiciels</a></li>
+							<li><a href="https://github.com/ProjetIsn2019/Rapports">Rapports</a></li>
+							<li><a href="https://github.com/ProjetIsn2019/Ethynd">Code</a></li>
+							<li><a href="pages/source.html">Sources/Logiciels</a></li>
 						</ul>
 					</li>
-					<li>
+					<li>					
 						<a href="">Qui sommes-nous ?</a>
 						<ul class="sous-menu">
-							<li><a href="anthony.html">Anthony</a></li>
-							<li><a href="dorian.html">Dorian</a></li>
-							<li><a href="sofiane.html">Sofiane</a></li>
+							<li><a href="../nous/anthony.html">Anthony</a></li>
+							<li><a href="">Dorian</a></li>
+							<li><a href="../nous/sofiane.html">Sofiane</a></li>
 						</ul>
 					</li>
 				</ul>
 			</nav>
 		</header>
 		<div class="contenu">
-
+			
 			<section>
 				<article>
 					<h2>Ma partie</h2>
@@ -55,152 +54,138 @@
 				</article>
 				<article>
 					<h1>Création d'une classe joueur</h1>
-					<div>
+					<div class = "text">
+						<h4>1) Ajout des déplacements</h4>
 						<video autobuffer autoloop loop controls>
 								<source src="../../images/dorian/ajout_deplacement.mp4">
-						</video>
-						<div class = "text">
-							<h4>1) Ajout des déplacements</h4>
-							<p> Création d'une image qui se contente de se déplacer de haut en bas et de droite à gauche.
-							</p>
-							<p><strong>Algorithme :</strong><br />
-								Différent du programme final: plus simple <br />
-								Si la touche pressée est "haut" => déplacement vers le haut
+						</video>  	
+						<p> Création d'une image qui se contente de se déplacer de haut en bas et de droite à gauche.
+						</p>
+						<p><strong>Algorithme :</strong><br />
+							Différent du programme final: plus simple <br />
+							Si la touche pressée est "haut" => déplacement vers le haut 
 
-							</p>
-							<p><strong>Inconveniant :</strong><br />
-								Code long et difficile à réexploiter  <br />
-								<br />
-							</p>
-						</div>
-
+						</p>
+						<p><strong>Inconveniant :</strong><br />
+							Code long et difficile à réexploiter  <br />
+							<br />
+						</p>
 					</div>
-					<div>
+					<div class = "text">
+						
+						<h4>2) Ajout des animations</h4>
 						<video autobuffer autoloop loop controls>
-								<source src="../../images/dorian/ajout_animation.mp4">
-						</video>
-						<div class = "text">
-							<h4>2) Ajout des animations</h4>
+							<source src="../../images/dorian/ajout_animation.mp4">
+						</video> 
+						<p><strong>Algorithme :</strong><br />
+							Avec un système de compteur.<br />
+							S'éxecute en fonction du nombre de frames par seconde.
 
-							<p><strong>Algorithme :</strong><br />
-								Avec un système de compteur.<br />
-								S'éxecute en fonction du nombre de frames par seconde.
-
-							</p>
-							<p><strong>Inconveniant de la version 1 :</strong><br />
-								Code difficile à réexploiter car spécifique au joueur. <br />
-							</p>
-						</div>
+						</p>
+						<p><strong>Inconveniant de la version 1 :</strong><br />
+							Code difficile à réexploiter car spécifique au joueur. <br />
+						</p>
 					</div>
+		
 				</article>
 				<article>
 					<h1>Création d'une classe entité</h1>
-					<div>
-
-						<div class = "text">
-							<img src ="../../images/dorian/entite.PNG" >
-							<h4>1) Optimisation de la classe joueur</h4>
-							<p>
-								La classe joueur est optimisée pour permettre de la réutiliser plus tard
-							</p>
-							<p>
-								Création du systéme de constante pour simplifier l'ajout des monstres et des personnages à venir.
-							</p>
-						</div>
+					<div class = "text">
+						<h4>1) Optimisation de la classe joueur</h4>
+						<img src ="../../images/dorian/entite.PNG" >
+						<p> 
+							La classe joueur est optimisée pour permettre de la réutiliser plus tard
+						</p>
+						<p>
+							Création du systéme de constante pour simplifier l'ajout des monstres et des personnages à venir.
+						</p>
 					</div>
-					<div>
-						<div class = "text">
-							<h4>2) Création d'une classe entité</h4>
-							<p>
-								La classe entité est créée et devient une superclasse dont vont hériter toute les entités tels que les monstres ou joueurs
-							</p>
-						</div>
+		
+					<div class = "text">
+						<h4>2) Création d'une classe entité</h4>
+						<p> 
+							La classe entité est créée et devient une superclasse dont vont hériter toute les entités tels que les monstres ou joueurs
+						</p>
 					</div>
-					<div>
+				
+					<div class = "text">
+						<h4>3) Création d'une classe Monstre</h4>
+						<p> 
+							La classe hérite donc de la classe entité et s'occupe de gérer les IA du jeux. <br />
+							Les tests sont effectués avec le dragon rouge dans un premier temps.
 
-						<div class = "text">
-							<h4>3) Création d'une classe Monstre</h4>
-							<p>
-								La classe hérite donc de la classe entité et s'occupe de gérer les IA du jeux. <br />
-								Les tests sont effectués avec le dragon rouge dans un premier temps.
-
-							</p>
-							<p>
-								L'IA dispose de deux actions possibles:
-								<ul>
-									<li>déplacement prédéfini</li>
-									<li>déplacement aléatoire</li>
-								</ul>
-							</p>
-						</div>
-						<img src ="../../images/dorian/ennemi.png" >
+						</p>
+						<p>
+							L'IA dispose de deux actions possibles: 
+							<ul>
+								<li>déplacement prédéfini</li>
+								<li>déplacement aléatoire</li>
+							</ul>
+						</p>
 					</div>
+					<img src ="../../images/dorian/ennemi.png" >
 				</article>
 				<article>
 					<h1>Centralisation des classes</h1>
-					<div>
-						<div class = "text">
-							<p> Les classes sont centralisées et héritent toutes de Entite().</p>
-							<p>
-						</div>
+					
+					<div class = "text">
+						<p> Les classes sont centralisées et héritent toutes de Entite().</p>
+						<p> 
 					</div>
 				</article>
 				<article>
 					<h1>Ajout des collisions</h1>
-					<div>
-						<video autobuffer autoloop loop controls>
-								<source src="../../images/dorian/collisions.mp4">
-						</video>
-						<div class = "text">
-							<p>Les collisions ont été faites par Sofiane et adaptées aux entités par Dorian</p>
-							<p><strong>Algorithme :</strong><br />
-								Avec un fonction pygame :<br />
-								Assigne un masque à chaque entité. Effectue un test de collisions
+					<video autobuffer autoloop loop controls>
+							<source src="../../images/dorian/collisions.mp4">
+					</video> 
+					<div class = "text">
+						<p>Les collisions ont été faites par Sofiane et adaptées aux entités par Dorian</p>
+						<p><strong>Algorithme :</strong><br />
+							Avec un fonction pygame :<br />
+							Assigne un masque à chaque entité. Effectue un test de collisions
 
-							</p>
-						</div>
+						</p>
 					</div>
 				</article>
 				<article>
 					<h1>ajout des entités</h1>
-					<div>
-						<video autobuffer autoloop loop controls>
-								<source src="../../images/dorian/entite.mp4">
-						</video>
-						<div class = "text">
-							<p>Ma derniere tâche: ajouter les entités présentes dans le jeux  </p>
-							<p><strong>Algorithme :</strong><br />
-								Dans constantes_entite.py avec des dictionnaires:
-								<ul>
-									<li>Annimation: contient les sprites de chaque monstre correspondant à chaque action.</li>
-									<li>Timings: contient les informations relatives aux déplacements, nombre de sprites, etc... </li>
-								</ul>
-								Dans constantes_partie.py avec un dictionnaire qui liste toutes les entitées par niveau et leurs paramètres.<br />
-
-							</p>
-						</div>
+					<video autobuffer autoloop loop controls>
+							<source src="../../images/dorian/entite.mp4">
+					</video> 
+					<div class = "text">
+						<p>Ma derniere tâche: ajouter les entités présentes dans le jeux  </p>
+						<p><strong>Algorithme :</strong><br />
+							Dans constantes_entite.py avec des dictionnaires: 
+							<ul>
+								<li>Annimation: contient les sprites de chaque monstre correspondant à chaque action.</li>
+								<li>Timings: contient les informations relatives aux déplacements, nombre de sprites, etc... </li>
+							</ul>
+							Dans constantes_partie.py avec un dictionnaire qui liste toutes les entitées par niveau et leurs paramètres.<br />
+						</p>
 					</div>
 				</article>
 				<article>
 					<h1>Problème rencontrés</h1>
-					<div>
-						<div class = "text">
-							<h4>1) les collisions :</h4>
-							<p>Les collisions sont difficiles à gérer.</p>
-							<p>Avant l'utilisation de fonction pygame, essais de collision à la main.
-							</p>
-							<h4>2) compenser le déplacement caméra :</h4>
-							<p>Comprendre le fonctionnement dynamique de la map pour adapter les entités
-							</p>
-						</div>
+					<div class = "text">
+						<h4>1) les collisions :</h4>
+						<p>Les collisions sont difficiles à gérer.
+						</p>
+						<p>Avant l'utilisation de fonction pygame, essais de collision à la main.
+						</p>
+						<h4>2) compenser le déplacement caméra :</h4>
+						<p>Comprendre le fonctionnement dynamique de la map pour adapter les entités
+						</p>
 					</div>
-				</article>
 
+				</article>
+				
 			</section>
 		</div>
 		<footer>
-			<p>Site web officiel d'Ethynd</p>
-			<p>Projet d'ISN libre de droit. (2019)</p>
+			<p>Site web du projet D'ISN</p>
+			<p>Crée par Sofiane Djerbie, Anthoni *...* et Dorian Voland</p>
+			<p>© 010111 ISN2019 Tous droits réservés.</p>
+		
 		</footer>
 	</body>
 </html>
