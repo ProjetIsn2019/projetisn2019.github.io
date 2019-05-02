@@ -120,6 +120,7 @@ article .titre img
 article video
 {
 	padding-right: 10px;
+	max-width: 100%;
 	height: 200px;
 } 
 article div img
