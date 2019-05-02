@@ -117,6 +117,14 @@ article .titre img
 }
 /*----------------------------------- Fin corps de la page ------------------------------------*/
 /*----------------------------------- corps de la page non principal------------------------------------*/
+article h1
+{
+	font-size: 1.7em;
+}
+article h2
+{
+	font-size: 1.2em;
+}
 article video
 {
 	padding-right: 10px;
