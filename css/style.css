@@ -138,6 +138,10 @@ article div
 	padding-bottom: 10px;
 	
 }
+article a
+{
+	text-decoration: underline;
+}
 /*----------------------------------- Fin corps de la page ------------------------------------*/
 
 /*-------------------------------------- Footer de la page ------------------------------------*/
