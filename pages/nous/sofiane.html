@@ -78,7 +78,7 @@
 						<a href="../../images/sofiane/couches.png"><img src="../../images/sofiane/couches.png"/></a>
 						<p>
 							Une Map est composée de 4 couches décoratrice et d'une 5ème couche de Hitboxs.<br />
-							Les 4 couches décoratrices (= couches de tuiles) sont nommés respectivement 0, 1, 2, 3.<br />
+							Les 4 couches décoratrices (= couches de tuiles) sont nommées respectivement 0, 1, 2, 3.<br />
 							Les couches 0, 1, 2 constituent l'arrière plan. La couche 3 est le premier plan.<br />
 						</p>
 						<a href="../../images/sofiane/couche3.gif"><img src="../../images/sofiane/couche3.gif"/></a>
@@ -92,8 +92,8 @@
 						<a href="../../images/sofiane/tileset.png"><img src="../../images/sofiane/tileset.png"/></a>
 						<p>
 							Un tileset est un regroupement de plusieurs tuiles. <a href="../../images/sofiane/tileset_complet.png">(Tileset Complet)</a><br />
-							Ces tuiles sont découpés assignées à un identifiant à l'aide d'une fonction.<br />
-							Les maps sont créées à l'aide de fichiers CSV stockant sous forme d'un tableau l'identifiant et la position de chaque tuiles.<br />
+							Ces tuiles sont découpées et assignées à un identifiant.<br />
+							Les maps sont modélisées à l'aide de fichiers CSV stockant sous forme d'un tableau l'identifiant et la position de chaque tuiles.<br />
 							Chaque couche de tuile est stockée dans un fichier CSV différent.<br />
 							Une map standard est donc composée de 4 fichiers. nom_0.csv, nom_1.csv etc.
 						</p>
@@ -128,10 +128,10 @@
 						<a href="../../images/sofiane/animation_exemple.gif"><img src="../../images/sofiane/animation_exemple.gif"/></a>
 						<p>
 							Les Matrices changent au fil du temps.<br />
-							En conséquence, les tuiles de la map change: Il y a des animations.<br />
-							C'est grâce a un dictionnaire que nous faisons cela.<br />
-							Les Matrices sont parcourues et certaines des valeurs sont changées à leur correspondance dans le dictionnaire.<br />
-							On regénère donc l'image des tuiles correspondantes aux identifiants changés dans la matrice.
+							En conséquence, les tuiles de la map changent: Il y a des animations.<br />
+							C'est grâce à un dictionnaire que nous faisons cela.<br />
+							Les Matrices sont parcourues sont changées avec un dictionnaire qui indique la tuile suivante.<br />
+							Pour optimiser le tout, on regénère l'image des tuiles pour faire la map.
 						</p>
 						<a href="../../images/sofiane/animation.png"><img src="../../images/sofiane/animation.png"/></a>
 					</div>
@@ -143,9 +143,9 @@
 						<h2>Des Matrices Dynamiques</h2>
 						<a href="../../images/sofiane/collisions.gif"><img src="../../images/sofiane/collisions.gif"/></a>
 						<p>
-							On va parcourir la matrice et vérifier si les identifiant de tuiles dans cette dernière correspondent a des tuiles possédant des collisions.<br />
+							On va parcourir la matrice et vérifier si les tuiles ont des collisions.<br />
 							Si c'est le cas alors on va créer un rectangle pygame et un masque à l'aide de l'objet Hitbox.<br />
-							On pourras donc utiliser ces éléments pour vérifier si il y a collision entre deux hitboxs.
+							On pourra donc utiliser ces éléments pour vérifier si il y a collision entre deux hitboxs.
 						</p>
 						<a href="../../images/sofiane/hitbox.png"><img src="../../images/sofiane/hitbox.png"/></a>
 					</div>
@@ -170,7 +170,6 @@
 						<p>
 							Comme dit au dessus, certains éléments abstraits ont pu nous perturber au départ, mais après maitrise de ces derniers tout est devenu plus facile.<br />
 							Cependant certaines choses restent obscures. Par exemple, l'asynchrone et le multi-threading pour améliorer les performances, l'optimisation du code etc.<br />
-							Tout est perfectible.
 						</p>
 						<p><a href="#Sommaire">Retour au sommaire</a></p>
 					</div>
